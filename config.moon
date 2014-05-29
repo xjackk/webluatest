@@ -1,4 +1,3 @@
-
 import config from require "lapis.config"
 
 config "production", ->

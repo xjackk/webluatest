@@ -1,0 +1,12 @@
+body {
+	margin: 25px;
+}
+
+.header {
+	font-size: 34px;
+}
+
+p.lead2 {
+	font: 'Inconsolata';
+	font-size: 25px;
+}
