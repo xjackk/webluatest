@@ -1,0 +1,155 @@
+/* global vars */
+
+@linkColor: #8b59c2;
+@linkColorHover: darken(@linkColor, 10);
+@blue: #00214D;
+@red: #CF142B;
+@white: #FFF;
+@black: #000;
+
+/* Mixins */
+
+.content-columns(@width; @count; @gap) {
+  -webkit-column-width: @width;
+     -moz-column-width: @width;
+          column-width: @width;
+  -webkit-column-count: @count;
+     -moz-column-count: @count;
+          column-count: @count;
+  -webkit-column-gap: @gap;
+     -moz-column-gap: @gap;
+          column-gap: @gap;
+}
+
+.border-radius (@radius: 20px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius
+}
+
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.transition(@transition: all linear .2s) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  transition: @transition;
+}
+
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: rotate(@deg);
+	-ms-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation: @name @duration @delay @ease;
+	-ms-animation: @name @duration @delay @ease;
+}
+
+
+/* Main CSS */
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #979390;
+}
+
+  /* Whatever hahahahah i hate css */
+.text-muted {
+  color: #fff;
+  text-align: left;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and stupid button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  .box-shadow(2px, 3px, 5px, 0.8px);
+}
+
+/* Supporting marketing grid content and what not */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.h4twitter {
+  font-size: 32px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier... */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    .box-shadow(0px, 2px, 4px, 0.7px);
+    border-bottom: 0;
+  }
+}
