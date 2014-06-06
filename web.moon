@@ -5,4 +5,8 @@ lapis.serve class extends lapis.Application
   [index: "/"]: =>
 		layout: 'layout'
 
+  [profile: "/profile"]: =>
+		layout: 'layout'
+
+
     

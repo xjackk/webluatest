@@ -6,7 +6,7 @@ class Layout extends html.Widget
       head -> 
       	title "Jack's Lapis Page"
       	link rel: 'stylesheet', href: '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' 
-      	link rel: 'stylesheet', href: 'static/main.css' 
+      
       body ->
 
     		div class: 'header', ->
@@ -14,12 +14,18 @@ class Layout extends html.Widget
     				a href: 'x', 'home'  
     				a href: 'x', 'about'  
     				a href: 'x', 'contact'
-				
+						
+
 				h3 class: 'text-muted', ->
 					text "Lapis Site"
 
-				div class: 'jumbotron', ->
-					h1 'This is how we do it'
-					p class: 'lead', ->
-						text 'Check it out, baby girl'
+				
+			div class: 'jumbotron', ->
+				h1 'This is how we do it'
+				p class: 'lead', ->
+					text 'Check it out, baby girl'
+
+			div class: 'row marketing', ->
+				div class: 'col-lg-6', ->
+					h4 'look ma, no hands'
 

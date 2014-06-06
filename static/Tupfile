@@ -1,5 +1,4 @@
 .gitignore
 
 : foreach *.coffee |> coffee -c %f |> %B.js
-
 : foreach *.less |> lessc %f > main.css  |> %B.css
