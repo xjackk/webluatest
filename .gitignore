@@ -2,3 +2,4 @@
 logs/
 nginx.conf.compiled
 .tup
+bower_components
