@@ -4,16 +4,20 @@ class Layout extends html.Widget
   content: =>
     html_5 ->
       head -> 
-      	title "Jack's Lapis Page"
-      	link rel: 'stylesheet', href: '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' 
-      
+        title "Jack's Lapis Page"
+        link rel: 'stylesheet', href: '/static/main.css'
+        link rel: 'stylesheet', href: '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'
+        meta charset: 'utf-8'
+
       body ->
+        
+        div class: 'container', ->
 
     		div class: 'header', ->
     			ul class: 'nav nav-pills pull-right', ->
-    				a href: 'x', 'home'  
-    				a href: 'x', 'about'  
-    				a href: 'x', 'contact'
+      			li href: 'x', 'home'  
+      			li href: 'x', 'about'  
+      			li href: 'x', 'contact'
 						
 
 				h3 class: 'text-muted', ->
@@ -22,7 +26,7 @@ class Layout extends html.Widget
 				
 			div class: 'jumbotron', ->
 				h1 'This is how we do it'
-				p class: 'lead', ->
+				p class: 'lead', -> 
 					text 'Check it out, baby girl'
 
 			div class: 'row marketing', ->
