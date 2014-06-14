@@ -10,7 +10,7 @@ class ContactLayout extends html.Widget
         meta charset: 'utf-8'
 
       body ->
-        
+        -- wrap everything in this container for proper css styles         
         div class: 'container', ->
 
     		div class: 'header', ->

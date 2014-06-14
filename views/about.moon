@@ -24,7 +24,7 @@ class AboutLayout extends html.Widget
 
 				
     		div class: 'jumbotron', ->
-    			h1 'Contact Me'
+    			h1 'About Page'
     			p class: 'lead', -> 
     				text "Email me, I don't bite"
 
