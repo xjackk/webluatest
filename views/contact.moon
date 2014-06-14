@@ -1,6 +1,6 @@
 html = require "lapis.html"
 
-class MainLayout extends html.Widget
+class ContactLayout extends html.Widget
   content: =>
     html_5 ->
       head -> 
@@ -20,20 +20,15 @@ class MainLayout extends html.Widget
 						
 
 				h3 class: 'text-muted', ->
-				  text "Lapis Site"
+					text "Contact Me"
 
 				
-			div class: 'jumbotron', ->
-				h1 'This is how we do it'
-				p class: 'lead', -> 
-					text 'Check it out, baby girl'
+    		div class: 'jumbotron', ->
+    			h1 'Contact Me'
+    			p class: 'lead', -> 
+    				text "Email me, I don't bite"
 
-			 
-      div class: 'row marketing', ->
-      
-      div class: 'col-lg-12', ->
-        h1 'Look Mom, no hands!'
-        p class: 'lead', ->
-          text 'its great to be here today'
-
+    		div class: 'row marketing', ->
+    			div class: 'col-lg-6', ->
+    				h4 'Look Mom, no hands!'
 
