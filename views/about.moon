@@ -29,6 +29,7 @@ class AboutLayout extends html.Widget
     				text "Email me, I don't bite"
 
     		div class: 'row marketing', ->
-    			div class: 'col-lg-6', ->
-    				h4 'Look Mom, no hands!'
+          div class: 'col-lg-12', ->
+           h4 'Look Mom, no hands!'
+
 

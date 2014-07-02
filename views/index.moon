@@ -31,7 +31,12 @@ class MainLayout extends html.Widget
 			 
       div class: 'row marketing', ->
       
-      div class: 'col-lg-12', ->
+      div class: 'col-lg-6', ->
+        h1 'Look Mom, no hands!'
+        p class: 'lead', ->
+          text 'its great to be here today'
+
+      div class: 'col-lg-6', ->
         h1 'Look Mom, no hands!'
         p class: 'lead', ->
           text 'its great to be here today'

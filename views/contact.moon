@@ -30,5 +30,5 @@ class ContactLayout extends html.Widget
 
     		div class: 'row marketing', ->
     			div class: 'col-lg-6', ->
-    				h4 'Look Mom, no hands!'
-
+            h4 'Look Mom, no hands!'
+          

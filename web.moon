@@ -3,7 +3,7 @@ lapis = require "lapis"
 lapis.serve class extends lapis.Application
 
   [index: "/"]: =>
-		layout: 'layout'
+		layout: 'index'
 
   [contact: "/contact"]: =>
 		layout: 'contact'
