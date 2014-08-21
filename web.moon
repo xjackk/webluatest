@@ -6,7 +6,9 @@ lapis.serve class extends lapis.Application
 		layout: 'layout'
 
   [profile: "/profile"]: =>
-		layout: 'layout'
+  		layout: 'layout'
 
+  [mackenzie: "/mackenziesmells"]: =>
+  		layout: 'mackenzie'
 
     
