@@ -1,6 +1,6 @@
 html = require "lapis.html"
 
-class Layout extends html.Widget
+class ContactLayout extends html.Widget
   content: =>
     html_5 ->
       head -> 
@@ -10,26 +10,25 @@ class Layout extends html.Widget
         meta charset: 'utf-8'
 
       body ->
-        
+        -- wrap everything in this container for proper css styles         
         div class: 'container', ->
 
     		div class: 'header', ->
     			ul class: 'nav nav-pills pull-right', ->
-      			li href: 'x', 'home'  
-      			li href: 'x', 'about'  
-      			li href: 'x', 'contact'
+  			   a href: 'x', 'about'  
+  			   a href: @url_for('contact'), 'contact'
 						
 
 				h3 class: 'text-muted', ->
-					text "Lapis Site"
+					text "Contact Me"
 
 				
-			div class: 'jumbotron', ->
-				h1 'This is how we do it'
-				p class: 'lead', -> 
-					text 'Check it out, baby girl'
+    		div class: 'jumbotron', ->
+    			h1 'Contact Me'
+    			p class: 'lead', -> 
+    				text "Email me, I don't bite"
 
-			div class: 'row marketing', ->
-				div class: 'col-lg-6', ->
-					h4 'look ma, no hands'
-
+    		div class: 'row marketing', ->
+    			div class: 'col-lg-6', ->
+            h4 'Look Mom, no hands!'
+          
